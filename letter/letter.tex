@@ -1,0 +1,74 @@
+%----------------------------------------------------------------------------------------
+%	CONFIGURATION
+%----------------------------------------------------------------------------------------
+\documentclass[
+	foldmarks=false,
+	pagenumber=false,
+	backaddress=on,
+	parskip=half,
+	addrfield=true
+]{scrlttr2}
+
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin-Regular}
+\usepackage{fontawesome}
+\usepackage[english,ngerman]{babel}
+
+\renewcommand*{\raggedsignature}{\raggedright} % Do not indent signature
+
+\setkomavar{firsthead}{%
+	\begin{center}
+		\renewcommand{\baselinestretch}{1.4}
+		\LARGE  \textsc{\usekomavar{fromname}}
+
+ 		\small {
+			\faMapMarker \ \usekomavar{fromaddress}  \\
+			\faEnvelope \ \usekomavar{fromemail} \  // \ \faPhone \ \usekomavar{fromphone} 
+		}
+	\end{center}
+}
+
+%----------------------------------------------------------------------------------------
+%	LETTER HEAD
+%----------------------------------------------------------------------------------------
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromaddress}{Musterstr. 12, 12345 Musterstadt}
+\setkomavar{fromemail}{max.mustermann@mail.de}
+\setkomavar{fromphone}{+49 123 4567 890}
+\setkomavar{signature}{Max Mustermann}
+\setkomavar*{enclseparator}{Anhang}
+\date{\today}
+
+%----------------------------------------------------------------------------------------
+%	CONTENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+ 
+\begin{letter}{Unternehmen XY \\ Abteilung A \\ Musterweg \\ 12345 Musterstadt}
+
+\setkomavar{subject}{Bewerbung ABC}
+
+\opening{Sehr geehrte Damen und Herren,}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia, urna et convallis ultrices, urna orci malesuada ligula, sit amet tincidunt elit lectus et diam. Morbi dapibus molestie orci, eu pharetra nisl lobortis sit amet. Phasellus ultricies gravida elit egestas dapibus. Maecenas varius luctus leo laoreet tristique.
+
+Etiam tempor fringilla lorem, laoreet dapibus neque interdum eu. Nunc porttitor lobortis sapien non condimentum. Pellentesque lobortis mauris in justo mollis, a dapibus nulla placerat. Maecenas ornare quis enim id lobortis. In hac habitasse platea dictumst. 
+
+Nam non elit pharetra, tempor eros eget, lobortis nisi. Donec rutrum feugiat est, a varius urna tincidunt sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis volutpat, libero placerat tristique congue, nibh dui sollicitudin erat, in commodo velit dolor vitae mi. Nullam eu ligula interdum, tincidunt ante eu, tristique nisi.
+
+In ornare ligula orci, eu pulvinar nulla porttitor nec. Fusce neque purus, vulputate vel tellus non, sollicitudin laoreet ipsum. Etiam consectetur ut sapien ut dapibus. Phasellus nisi tellus, ullamcorper non egestas quis, iaculis sed nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vel dui auctor, lobortis mauris ut, dapibus quam. Etiam commodo eget tortor ultrices faucibus.
+
+In ac lorem tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas lobortis mauris quam. Nam rhoncus arcu a nulla pellentesque dictum in ut tortor. Maecenas dictum purus sit amet urna gravida pulvinar. In cursus ipsum turpis, at blandit nisl bibendum a. Nulla eu ante vel ex blandit mattis. Sed maximus euismod massa sed consequat. Aenean lacinia posuere pulvinar. Proin lorem nisi, tempor quis blandit quis, mollis in tortor. Pellentesque erat metus, malesuada ac urna vitae, pulvinar porta massa. Suspendisse est ligula, semper in interdum vitae, imperdiet in orci. Morbi odio magna, fringilla et diam nec, lobortis efficitur massa.
+
+Vestibulum bibendum interdum arcu, suscipit dictum ipsum consectetur pellentesque. Vestibulum varius tempor cursus. Curabitur vel risus blandit, volutpat lorem nec, accumsan lacus. Curabitur in sem gravida, varius est et, consectetur nisl. Praesent tincidunt risus ut dolor sollicitudin volutpat. Nam aliquam nunc velit, rhoncus ultrices nisi maximus ac. Maecenas non laoreet diam.
+
+Morbi lectus orci, dapibus vel egestas vel, tempor vitae neque. Donec aliquet ante id ipsum gravida, nec congue lorem mattis. Morbi finibus congue lectus vitae tincidunt. Donec laoreet vehicula pretium. Praesent nulla quam, scelerisque eget risus et, sagittis rhoncus odio. Curabitur scelerisque metus in justo placerat, sit amet accumsan nunc molestie. Nullam ac eros ultricies, suscipit sapien ut, suscipit odio. Proin eu commodo risus. Ut eu purus posuere, pretium ante non, tincidunt diam. Donec fermentum quam odio, non porta tortor sagittis non. 
+
+\closing{Mit freundlichen Grüßen}
+
+\encl{Lebenslauf}
+
+\end{letter}
+\end{document}
