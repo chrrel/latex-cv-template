@@ -6,8 +6,7 @@ LaTeX templates for creating CVs and application letters.
 * Example PDF file for the [letter template](letter/letter.pdf).
 
 > **Note:**
-> This template needs to be compiled with `XeLaTeX`.
-> The document uses the font *Fontin* which can be downloaded for free from [here](http://www.exljbris.com/fontin.html). Furthermore, `fontawesome` is used for icons.
+> The document uses the font *AlegreyaSans*.
 
 
 ## Commands for the CV Template
