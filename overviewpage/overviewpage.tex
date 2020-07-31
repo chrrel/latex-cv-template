@@ -1,0 +1,26 @@
+\documentclass{../letter/applicationletter}
+
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromaddress}{Musterstr. 12, 12345 Musterstadt}
+\setkomavar{fromemail}{\href{mailto:max.mustermann@mail.de}{max.mustermann@mail.de}}
+\setkomavar{fromphone}{+49 123 4567 890}
+\setkomavar{signature}{\includegraphics[scale=0.16]{../cv/signature}}
+\setkomavar*{enclseparator}{Anlagen}
+\author{Max Mustermann}
+\date{}
+
+\begin{document}
+	\begin{letter}{ ~}
+		
+		\setkomavar{subject}{Anlagenverzeichnis}
+		
+		\opening{Dieser Bewerbung sind die folgenden Dokumente angefügt.}
+
+		\begin{enumerate}
+			\item Zeugnis 1,  Universität Musterstadt
+			\item Abiturzeugnis, Gymnasium Musterstadt
+			\item Zertifikat Abc
+		\end{enumerate}
+		
+	\end{letter}
+\end{document}
